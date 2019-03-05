@@ -15,7 +15,7 @@ vsCode.addEventListener('dblclick' , function(darkMode){
 });
 
 //TWO
-const revert = document.querySelector('html');
+const revert = document.querySelector('html body');
 revert.addEventListener('keypress' , function(darkMode){
     var vs = alert ("You are now entering Max's VS code?");
     darkMode.target.style.backgroundColor = "#a52222";
@@ -23,7 +23,7 @@ revert.addEventListener('keypress' , function(darkMode){
 });
 
 //THREE
-const activate = document.querySelector('h1');
+const activate = document.querySelector('footer');
 activate.addEventListener('mouseover', function(develop) {
     alert ('Entering Developer mode');
     
@@ -47,7 +47,6 @@ image.addEventListener('mouseover' , function(corners){
 const button = document.querySelector('.btn');
 button.addEventListener('click', function(event){
  alert(`Submit button was clicked!`);
- // This will prevent the form from submitting to action_page.php
   event.preventDefault();
 });
 
@@ -56,7 +55,6 @@ const image1 = document.querySelector('.img-content');
 image1.addEventListener('mouseover' , function(corners1){
     corners1.target.style.borderRadius = "70%";
     corners1.target.style.transition = "5s";
-    corners1.target.style.borderBottom = "0";
     corners1.target.style.boxShadow = '10px 10px 5px grey';
 });
 
@@ -77,12 +75,17 @@ image2.addEventListener('mouseover' , function(corners2){
 });
 
 //NINE
-const image3 = document.querySelector('.home .inverse-content img');
+const image3 = document.querySelector('.home .inverse-content .img-content');
 image3.addEventListener('mouseover' , function(corners3){
     corners3.target.style.borderRadius = "70%";
     corners3.target.style.transition = "5s";
-    corners3.target.style.borderBottom = "0";
     corners3.target.style.boxShadow = '10px 10px 5px grey';
 });
 
 //TEN
+const title = document.querySelector('h1');
+title.addEventListener('mouseover', function(spin){
+    spin.target.style.transform = "rotateY(1080deg)";
+    spin.target.style.transition = "5s";
+});
+
